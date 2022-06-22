@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>Primeiro Número: <input id="n1" type="number"></label><br>
+    <label>Segundo Número: <input id="n2" type="number"></label><br>
+    <button onclick="inverte()">inverter</button>
+
+    <script>
+        function inverte(){
+            var num1=parseFloat(document.getElementById("n1").value)
+            var num2=parseFloat(document.getElementById("n2").value)
+
+            var aux= num1
+                num1= num2
+                num2= aux
+            alert(
+                 "antes:\n"+
+                 "numero1:"+ document.getElementById("n1").value+"\n"+
+                 "numero2:"+document.getElementById("n2").value+"\n\n"+
+                 "invertido:\n"+
+                 "numero1="+num1+"\n"+
+                 "numero2="+num2
+            )
+        }
+    </script>
+    
+</body>
+
+</html>
